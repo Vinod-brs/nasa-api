@@ -1,0 +1,267 @@
+:root {
+    --primary-color: #1A4B84;
+    --chathams_blue: #1A4B84;
+    --tamarillo: #991E14;
+    --yellow_sea: #FEAD06;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+
+
+.btn{
+    color: #fff;
+    background: var(--primary-color);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px 12px;
+}
+
+/* Header Styles
+  -------------------------------------------------- */
+
+header .bg-gradient {
+    background: rgb(216, 216, 216);
+}
+
+body {
+    background-size: cover;
+}
+
+header .navbar {
+    padding: 20px 0 0;
+}
+
+header .navbar-brand {
+    padding: 0;
+    z-index: 1;
+    width: 213px;
+    height: 124px;
+    background-color: var(--primary-color);
+}
+
+header .navbar-brand img {
+    width: 56px;
+}
+
+img {
+    max-width: 100%;
+}
+
+header h3 {
+    font: normal normal 600 18px/27px Oswald;
+    color: #fff;
+}
+
+header h4 {
+    font: normal normal 600 18px/28px Oswald;
+    letter-spacing: 0.36px;
+    color: #191919;
+    text-transform: uppercase;
+}
+
+header p {
+    font: 600 12px/15px Poppins;
+    letter-spacing: 0.24px;
+    color: #000000;
+}
+
+.ReactTitle {
+    background-color: #838383;
+    height: 50px;
+    font: normal normal 600 19px/27px Oswald;
+    letter-spacing: 0.38px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.ReactTitle img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+
+.link {
+    
+    font: normal normal medium 12px/15px Poppins;
+    letter-spacing: 0.24px;
+    height: 40px;
+    padding: 10px 10px;
+
+}
+
+.link a {
+    color: #055BA6;
+
+}
+
+/* Sticky footer styles
+  -------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px;
+    /* Vertically center the text there */
+    background-color: #f5f5f5;
+}
+
+
+.footer-dark {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+footer {
+    font: normal normal 600 12px/19px Oswald;
+    letter-spacing: 0.24px;
+    color: #FFFFFF;
+}
+
+.theme-switch {
+    margin: 0 5px;
+    padding: 10px;
+    font-size: 0.5rem;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.theme-switch-chathams_blue {
+    background-color: var(--chathams_blue);
+}
+
+.theme-switch-chathams_blue:hover {
+  box-shadow: 2px 2px 2px var(--chathams_blue);
+}
+
+.theme-switch-tamarillo {
+    background-color: var(--tamarillo);
+}
+
+.theme-switch-tamarillo:hover {
+  box-shadow: 2px 2px 2px var(--tamarillo);
+}
+
+.theme-switch-yellow_sea {
+    background-color: var(--yellow_sea);
+}
+
+.theme-switch-yellow_sea:hover {
+  box-shadow: 2px 2px 2px var(--yellow_sea);
+}
+
+.selections {
+    /* width: 600px; */
+    float: left;
+}
+.map {
+    height: 60vh;
+    width: 100%;
+}
+
+.marker {
+    display: block;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+}
+
+#eventList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-gap: 20px;
+}
+a {
+    text-decoration: none;
+}
+.event {
+    height: 340px;
+    list-style-type: none;
+    border: 2px solid var(--primary-color);
+    background-color: #18bbc73b;
+    border-radius: 3px;
+    padding: 40px 20px;
+    display: grid;
+    
+    grid-template-columns: 3fr 3fr;
+    grid-template-areas:'name image';
+    text-align: left;
+    transition: 0.3s;
+}
+.event:hover {
+    scale: 1.02;
+    box-shadow: 2px 0px 10px;
+}
+
+.event a>img {
+    position: relative;
+    top: 20px;
+    max-height: 240px;
+    /* grid-area: image; */
+}
+
+.event-desc{
+    margin-right: 6px;
+
+}
+
+.w-48{
+    width: 48%!important;
+}
+.w-90{
+    width: 90%!important;
+}
+.mapboxgl-popup-content .mapboxgl-popup-close-button {
+    margin: 11px 15px 0px 0px;
+    padding: 0px 5px;
+    border: 1px solid rgb(122, 115, 115);
+}
+.mapboxgl-popup-content{
+    width: fit-content;
+}
+
+.event p {
+    color: #000000;
+}
+
+#load {
+    position: absolute;
+    left: 44%;
+    top: 400px;
+  
+}
+#NoData {
+    position: absolute;
+    left: 8%;
+}
